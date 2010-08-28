@@ -16,5 +16,7 @@ urlpatterns = patterns('',
 
 	(r'^membership/', 	include('membership.urls')),
 	(r'^cv/',			include('cv.urls')),
+
+	(r'^$', 'django.views.generic.simple.redirect_to', {'url': 'http://jebif.fr'}),
 )
 
