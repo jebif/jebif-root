@@ -1,3 +1,5 @@
+# -*- coding: utf-8
+
 import os
 
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -7,10 +9,12 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('Sebastien Briois', 'sebriois@gmail.com'),
-    ('Pauleve Loic', 'pauleve@inzenet.org')
+    ('Loic Paulevé', 'pauleve@inzenet.org')
 )
 
-MANAGERS = ADMINS
+MANAGERS = () # defined in localsettings
+
+EMAIL_SUBJECT_PREFIX = "[JeBiF] "
 
 DATABASE_ENGINE = 'sqlite3'    # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = os.path.join(PROJECT_PATH,'database.sqlite3')             # Or path to database file if using sqlite3.

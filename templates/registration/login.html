@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ MEDIA_URL }}cv/css/login.css" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      {% if form.errors %}
+          <div class="msg_error">{{ form.errors.values.0.as_text }}</div>
+      {% endif %}
+      <div id="login">
+          <div id="header">
+            Plateforme JeBiF - Identification
+          </div>
+          <div id="content">
+              <form method="post" action="?next={{ next }}" name="login">{% csrf_token %}
+                  <label for="username">Identifiant</label>{{ form.username }}
+                  <div class="cleaner"></div>
+
+                  <label for="password">Mot de passe</label>{{ form.password }}
+                  <div class="cleaner"></div>
+                  <br/>
+                  <input type="image" src="{{ MEDIA_URL }}cv/img/layout/login/btn-login.png" value="Connexion" class="submit" />
+              </form>
+          </div>
+          <div id="footer">Développé par le RSG France (JeBiF)</div>
+      </div>
+    </div>
+  </body>
+</html>
