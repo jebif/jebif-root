@@ -110,3 +110,6 @@ AUTH_PROFILE_MODULE = 'users.UserProfile'
 DATE_FORMAT = 'd/m/Y'
 DATE_INPUT_FORMAT = '%d/%m/%Y'
 
+LOGIN_URL = "/%saccounts/login/" % ROOT_URL
+REQUIRE_LOGIN_PATH = LOGIN_URL
+

@@ -21,6 +21,7 @@ class RequireLoginMiddleware(object):
         if request.user.is_anonymous() \
             and not '/media/' in request.path \
             and not '/admin/' in request.path \
+            and not '/admin_media/' in request.path \
             and not '/media_admin/' in request.path \
             and not '/accounts/' in request.path \
             and not '/licence_required/' in request.path \
