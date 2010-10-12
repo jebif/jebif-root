@@ -27,6 +27,7 @@ class RequireLoginMiddleware(object):
             and not '/licence_required/' in request.path \
             and not '/modify_password/' in request.path \
             and not '/membership/' in request.path \
+            and not '/election/' in request.path \
             and request.path != self.require_login_path:
             if request.POST:
                 return login(request)
