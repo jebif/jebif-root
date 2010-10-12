@@ -104,6 +104,7 @@ INSTALLED_APPS = (
     'cv.candidate',
     'cv.users',
 	'membership',
+	'election',
 )
 
 AUTH_PROFILE_MODULE = 'users.UserProfile'
