@@ -7,13 +7,6 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    ('Sebastien Briois', 'sebriois@gmail.com'),
-    ('Loic Paulevé', 'pauleve@inzenet.org')
-)
-
-MANAGERS = () # defined in localsettings
-
 EMAIL_SUBJECT_PREFIX = "[JeBiF] "
 
 DATABASE_ENGINE = 'sqlite3'    # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
