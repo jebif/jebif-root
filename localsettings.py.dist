@@ -8,6 +8,7 @@ ADMINS = (
 	('Name', 'email'),
 )
 MANAGERS = ADMINS
+MEMBERSHIP_MANAGERS = ADMIN
 
 # $ python -c 'import random; print "".join([random.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)])'
 SECRET_KEY = ''
