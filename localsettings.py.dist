@@ -11,6 +11,10 @@ ADMINS = (
 MANAGERS = ADMINS
 MEMBERSHIP_MANAGERS = MANAGERS
 
+DEFAULT_FROM_EMAIL = "NO-REPLY@jebif.fr"
+SERVER_EMAIL = "admin@jebif.fr"
+
+
 # $ python -c 'import random; print "".join([random.choice("abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)") for i in range(50)])'
 SECRET_KEY = ''
 
