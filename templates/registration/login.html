@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ MEDIA_URL }}cv/css/login.css" type="text/css" />
+	<title>JeBiF - authentification</title>
   </head>
   <body>
     <div id="wrapper">
@@ -18,6 +19,7 @@
 
                   <label for="password">Mot de passe</label>{{ form.password }}
                   <div class="cleaner"></div>
+				  <p>Mot de passe oublié&nbsp;? <a href="{% url django.contrib.auth.views.password_reset %}">demander un nouveau mot de passe</a>.</p>
                   <br/>
                   <input type="image" src="{{ MEDIA_URL }}cv/img/layout/login/btn-login.png" value="Connexion" class="submit" />
               </form>

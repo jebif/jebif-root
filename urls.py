@@ -1,3 +1,4 @@
+
 from django.conf.urls.defaults import *
 from django.contrib import admin
 
@@ -14,8 +15,7 @@ urlpatterns = patterns('',
     (r'^admin_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.ADMIN_MEDIA_ROOT}),
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
-	(r'^accounts/login/$', 'django.contrib.auth.views.login'),
-
+	(r'^accounts/',		include('django.contrib.auth.urls')),
 	(r'^cv/',			include('cv.urls')),
 	(r'^election/', 	include('election.urls')),
 	(r'^membership/', 	include('membership.urls')),
