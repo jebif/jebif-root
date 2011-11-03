@@ -1,2 +1,3 @@
 #!/bin/sh
 touch apache/touch_to_restart
+touch gunicorn/touch_to_restart
