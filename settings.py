@@ -105,5 +105,6 @@ DATE_FORMAT = 'd/m/Y'
 DATE_INPUT_FORMAT = '%d/%m/%Y'
 
 LOGIN_URL = "/%saccounts/login/" % ROOT_URL
+LOGIN_REDIRECT_URL = "/%smembership/subscription/me/update/" % ROOT_URL
 REQUIRE_LOGIN_PATH = LOGIN_URL
 

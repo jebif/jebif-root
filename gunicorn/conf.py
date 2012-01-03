@@ -12,6 +12,7 @@ bind = "unix:/var/run/gunicorn/jebif/sock"
 pidfile = "/var/run/gunicorn/jebif/pid"
 max_requests = 500
 umask = 0007
+workers = 2
 
 def when_ready( server ) :
 	from jebif.gunicorn import monitor
