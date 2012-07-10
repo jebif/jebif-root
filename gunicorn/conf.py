@@ -6,6 +6,8 @@ for p in paths :
 	if p not in sys.path :
 		sys.path.append(p)
 
+proc_name = "jebif"
+
 os.environ["DJANGO_SETTINGS_MODULE"] = "jebif.settings"
 
 bind = "unix:/var/run/gunicorn/jebif/sock"
